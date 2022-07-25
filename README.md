@@ -1,2 +1,2 @@
 # clone-netflix
-Clone da pagina inicial netiflix.
+Clone da pagina inicial Netflix.
