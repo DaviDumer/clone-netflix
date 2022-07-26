@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Clone NETFLIX</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-input-initial.css">
 </head>
 <body id="root">
   <div id="background-main">
@@ -19,7 +20,7 @@
             </option>
             <option value="en">English</option>
           </select>
-          <button class="button">Entrar</button>
+          <button class="button" type="submit">Entrar</button>
         </div>
       </header>
       <main>
@@ -27,16 +28,13 @@
           <h1>Filmes, séries e muito mais. Sem limites.</h1>
           <h2>Assista onde quiser. Cancele quando quiser.</h2>
           <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-          <!-- <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
-            <desc>chevron</desc>
-            <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="none" fill-rule="evenodd"></path>
-          </svg> -->
-          <span id="Submit-Email">
-            <input id="Input-Email" placeholder="&nbsp;&nbsp; Email">
-            <button id="Button-Input-Email">
-              Vamos lá
-            </button>
-          </span>
+          <div id="Submit-Email">
+            <span id="container-input-test">
+              <input type="text" id="input-test" autocomplete="off">
+              <label onclick="console.log('test')" id="label-input-test">Email</label>
+            </span>
+            <input onclick="console.log('test')" type="button" id="Button-Input-Email" value="Vamos lá">
+          </div>
         </div>
       </main>
     </div>
@@ -49,4 +47,5 @@
   <footer>
   </footer>
 </body>
+<script src="./scripts/main.js"></script>
 </html>
