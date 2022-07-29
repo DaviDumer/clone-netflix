@@ -10,7 +10,7 @@ body{
   background-color: #222222;
 }
 main{
-  height: 86vh;
+  height: 642px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +37,7 @@ header{
   margin: 0 56px;
   margin-top: 3px;
   width: auto;
-  height: 12vh;
+  height: 88px;
   background: none;
   display: flex;
   flex-direction: row;

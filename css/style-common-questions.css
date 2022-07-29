@@ -1,0 +1,27 @@
+#common-questions{
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+#common-questions h1{
+  font-size: 2.9rem;
+  margin-bottom: 44px;
+}
+/*
+<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+*/
+#common-questions button{
+  width: 700px;
+  height: 76px;
+  margin: 3px 0px;
+  background-color: #303030;
+  display: flex;
+  padding: 0 24px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+}
