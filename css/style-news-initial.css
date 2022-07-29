@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* column-gap: 20px; */
 }
 .spam-legend-news{
   width: 38%;
@@ -23,19 +24,45 @@
 }
 .spam-legend-news h2{
   font-weight: 400;
-  font-size: 1.625rem;
+  font-size: 1.6rem;
 }
-.spam-img-news{
-  width: 34%;
+.spam-baner-news{
+  width: 38%;
   height: 100%;
   display: flex;
-  padding-left: 50px;
   padding-bottom: 20px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
-.img-news{
+.baner-left{
+  justify-content: flex-start;
+}
+.baner-right{
+  justify-content: flex-end;
+}
+.legend-left{
+  padding-right: 14px;
+}
+.legend-right{
+  padding-left: 14px;
+}
+.spam-baner-news img{
+  position: relative;
+  z-index: 1;
   height: 88%;
   width: auto;
+}
+#video-news1{
+  position: absolute;
+  z-index: 0;
+  width: 70%;
+  height: auto;
+  padding-bottom: 10px;
+  right: 50px;
+}
+#img-news2{
+  right: 58px;
 }
