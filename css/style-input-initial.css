@@ -40,7 +40,7 @@
 
 /* condigo do novo input text */
 
-#container-input-test{
+#container-input{
   /* min-width: 250px; */
   width: 500px;
   height: 70px;
@@ -48,9 +48,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+  border-top-left-radius : 2px;
+  border-bottom-left-radius : 2px;
 }
 
-#container-input-test input{
+#container-input input{
   outline: none;
   color: #000;
   font-size: 1rem;
@@ -59,7 +61,7 @@
   padding: 0px 10px;
 }
 
-#container-input-test label{
+#container-input label{
   font-size: 1rem;
   color: #999;
   left: 10px;
@@ -68,7 +70,7 @@
   transition: 0.1s;
 }
 
-#container-input-test input:focus ~ label{
+#container-input input:focus ~ label{
   margin-top: 5px;
   font-size: 13px;
   font-weight: bold;

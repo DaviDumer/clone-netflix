@@ -6,15 +6,17 @@
   <title>Clone NETFLIX</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/style-input-initial.css">
+  <link rel="stylesheet" href="./css/style-button-initial.css">
+  <link rel="stylesheet" href="./css/style-news-initial.css">
   <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
 </head>
 <body id="root">
   <div id="background-main">
     <div id="darken-background-main">
       <header>
-        <!-- <H1 class="logo">NETFLIX</H1> -->
         <img id="logo" src="./img/netflix.svg" alt="Logo Netflix" >
         <div id="container-enter">
+          <img src="./img/earth_editada.svg" alt="icon earth">
           <select class="select" name="select">
             <option value="pt-br">
               Português
@@ -29,21 +31,35 @@
           <h1>Filmes, séries e muito mais. Sem limites.</h1>
           <h2>Assista onde quiser. Cancele quando quiser.</h2>
           <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-          <div id="Submit-Email">
-            <span id="container-input-test">
-              <input type="text" id="input-test" autocomplete="off">
-              <label onclick="console.log('test')" id="label-input-test">Email</label>
+          <div id="submit-email">
+            <span id="container-input">
+              <input type="text" id="input" autocomplete="off">
+              <label onclick="console.log('test')" id="label-input">Email</label>
             </span>
-            <input onclick="console.log('test')" type="button" id="Button-Input-Email" value="Vamos lá">
+            <div id="container-button">
+              <img src="./img/arrow_to_right.svg" alt="Ceta para direita">
+              <input onclick="console.log('test')" type="button" id="button-input-email" value="Vamos lá&nbsp;&nbsp;">
+            </div>
           </div>
         </div>
       </main>
     </div>
   </div>
-  <div class="news-containes"></div>
-  <div class="news-containes"></div>
-  <div class="news-containes"></div>
-  <div class="news-containes"></div>
+  <div class="news-containes" id="news-1">
+    <spam class="spam-legend-news">
+      <h1>Aproveite na TV.</h1>
+      <h2>Assista em Smart TVs, PlayStation, Xbox,
+        Chromecast, Apple TV, aparelhos de Blu-ray e
+        outros dispositivos.</h2>
+    </spam>
+    <spam class="spam-img-news">
+      <!-- <video src=""></video> -->
+      <img class="img-news" src="./img/tv.png" alt="TV em uma estante com o controle ao lado.">
+    </spam>
+  </div>
+  <div class="news-containes" id="news-2"></div>
+  <div class="news-containes" id="news-3"></div>
+  <div class="news-containes" id="news-4"></div>
   <div></div>
   <footer>
   </footer>

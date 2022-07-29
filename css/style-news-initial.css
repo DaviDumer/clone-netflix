@@ -1,0 +1,41 @@
+.news-containes{
+  background-color: #000;
+  margin-top: 8px;
+  height: 62.5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.spam-legend-news{
+  width: 38%;
+  height: 100%;
+  /* padding-left: 10%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  row-gap: 20px;
+}
+.spam-legend-news h1{
+  font-size: 3.125rem;
+}
+.spam-legend-news h2{
+  font-weight: 400;
+  font-size: 1.625rem;
+}
+.spam-img-news{
+  width: 34%;
+  height: 100%;
+  display: flex;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.img-news{
+  height: 88%;
+  width: auto;
+}

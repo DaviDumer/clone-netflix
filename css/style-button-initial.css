@@ -1,0 +1,27 @@
+#container-button{
+  position: relative;
+}
+#container-button img{
+  width: 11px;
+  height: 22px;
+  position: absolute;
+  left: 172px;
+  top: 23px;
+}
+#button-input-email {
+  font-weight: 500;
+  font-size: 1.875rem;
+  width: 210px;
+  height: 70px;
+  background-color: #e50914;
+  border-top-right-radius : 2px;
+  border-bottom-right-radius : 2px;
+  border: none;
+}
+#button-input-email:hover {
+  background-color: #ff0c18;
+}
+#button-input-email:active {
+  background-color: #bc0811;
+  outline: 3px solid #a2050d;
+}

@@ -56,8 +56,19 @@ header{
   border: 2px solid #e50914;
   border-radius: 3px;
 }
+#container-enter{
+  position: relative;
+}
+#container-enter img{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
 .select{
-  padding: 8px 22px;
+  padding: 9px 10px;
+  padding-left: 18px;
   background-color: #00000066;
   border-radius: 3px;
 }
@@ -86,22 +97,9 @@ header{
   /* padding: 0 5%; */
   padding-bottom: 20px;
 }
-#Submit-Email{
+#submit-email{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-#Button-Input-Email {
-  font-weight: 500;
-  font-size: 1.875rem;
-  width: 210px;
-  height: 70px;
-  background-color: #e50914;
-}
-.news-containes{
-  background-color: #000;
-  margin-top: 8px;
-  height: 60vh;
-  width: 100%;
 }
