@@ -11,8 +11,31 @@ setInterval(() => {
 }, 3000
 )
 
-// const buttonQuestion = document.querySelectorAll('#common-questions button')[0]
-// const text = buttonQuestion.value
-// console.log(text)
-// buttonQuestion.children = `${text}${`
-// <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>`}`
+const buttonQuestion = document.querySelectorAll('#common-questions button')
+const spanOpen = (val, boo) => document
+  .querySelectorAll('#common-questions button + span')[val]
+  .setAttribute('data-open', boo)
+
+let value = 0
+const openHelp = function(){
+  if(value){
+    if(value === this.getAttribute('data-id')){
+      spanOpen(value-1, false)
+      value = 0
+    } else {
+      spanOpen(value-1, false)
+      value = this.getAttribute('data-id')
+      spanOpen(value-1, true)
+    }
+  } else {
+    value = this.getAttribute('data-id')
+    spanOpen(value-1, true)
+  }
+}
+buttonQuestion.forEach((i, v) => {
+  i.addEventListener('click', openHelp , false)
+  // spanQuestion[v].setAttribute('class', "asdf")
+  buttonQuestion[v].setAttribute('data-id', v + 1)
+  spanOpen(v, false)
+  i.innerHTML = i.textContent + '<img class="img-plus" src="./img/plus.svg" alt="Mais">'
+})

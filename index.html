@@ -33,14 +33,14 @@
           <h1>Filmes, séries e muito mais. Sem limites.</h1>
           <h2>Assista onde quiser. Cancele quando quiser.</h2>
           <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-          <div id="submit-email">
-            <span id="container-input">
-              <input type="text" id="input" autocomplete="off">
-              <label onclick="console.log('test')" id="label-input">Email</label>
+          <div class="submit-email">
+            <span class="container-input">
+              <input type="text" class="input" autocomplete="off">
+              <label onclick="console.log('test')" class="label-input">Email</label>
             </span>
-            <div id="container-button">
+            <div class="container-button">
               <img src="./img/arrow_to_right.svg" alt="Ceta para direita">
-              <input onclick="console.log('test')" type="button" id="button-input-email" value="Vamos lá&nbsp;&nbsp;">
+              <input onclick="console.log('test')" type="button" class="button-input-email" value="Vamos lá&nbsp;&nbsp;">
             </div>
           </div>
         </div>
@@ -111,13 +111,58 @@
   <div class="news-containes big-containe-news" id="common-questions">
     <h1>Perguntas frequentes</h1>
     <button>O que é a Netflix?</button>
+    <span>
+      <h2>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.</h2>
+      <h2>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</h2>
+    </span>
     <button>Quanto custa a Netflix?</button>
+    <span>
+      <h2>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$ 25,90 a R$ 55,90 por mês. Sem contrato nem taxas extras.</h2>
+    </span>
     <button>Onde posso assistir?</button>
+    <span>
+      <h2>Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.</h2>
+      <h2>Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</h2>
+    </span>
     <button>Como faço para cancelar?</button>
+    <span>
+      <h2>
+        A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+      </h2>
+    </span>
     <button>O que eu posso assistir na Netflix?</button>
+    <span>
+      <h2>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.</h2>
+    </span>
     <button>A Netflix é adequada para crianças?</button>
+    <span>
+      <h2>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
+      </h2>
+      <h2>O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.</h2>
+    </span>
+    <h4 id="ready-to-watch">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h4>
+    <div class="submit-email submit-email2">
+      <span class="container-input">
+        <input type="text" class="input" autocomplete="off">
+        <label onclick="console.log('test')" class="label-input">Email</label>
+      </span>
+      <div class="container-button">
+        <img src="./img/arrow_to_right.svg" alt="Ceta para direita">
+        <input onclick="console.log('test')" type="button" class="button-input-email" value="Vamos lá&nbsp;&nbsp;">
+      </div>
+    </div>
   </div>
-  <footer>
+  <footer class="news-containes">
+    <div id="container-enter">
+      <img src="./img/earth_editada.svg" alt="icon earth">
+      <select class="select" name="select">
+        <option value="pt-br">
+          Português
+        </option>
+        <option value="en">English</option>
+      </select>
+      <!-- <button class="button" type="submit">Entrar</button> -->
+    </div>
   </footer>
 </body>
 <script src="./scripts/main.js"></script>
