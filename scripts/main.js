@@ -11,31 +11,27 @@ setInterval(() => {
 }, 3000
 )
 
-const buttonQuestion = document.querySelectorAll('#common-questions button')
-const spanOpen = (val, boo) => document
-  .querySelectorAll('#common-questions button + span')[val]
-  .setAttribute('data-open', boo)
+function search(seletor) {
+  return Array.from(window.document.querySelectorAll(seletor))
+}
 
-let value = 0
-const openHelp = function(){
-  if(value){
-    if(value === this.getAttribute('data-id')){
-      spanOpen(value-1, false)
-      value = 0
-    } else {
-      spanOpen(value-1, false)
-      value = this.getAttribute('data-id')
-      spanOpen(value-1, true)
-    }
-  } else {
-    value = this.getAttribute('data-id')
-    spanOpen(value-1, true)
+const listOfHeights = [ '339', '202', '448', '202', '165', '375' ]
+var previousElement;
+function resetThePevious(i) {
+  if (previousElement) {
+    previousElement.style.height = "0px"
+    previousElement = null
   }
 }
-buttonQuestion.forEach((i, v) => {
-  i.addEventListener('click', openHelp , false)
-  // spanQuestion[v].setAttribute('class', "asdf")
-  buttonQuestion[v].setAttribute('data-id', v + 1)
-  spanOpen(v, false)
-  i.innerHTML = i.textContent + '<img class="img-plus" src="./img/plus.svg" alt="Mais">'
+search('.help-button').forEach((e, i) => {
+  e.onclick = function () {
+    if (previousElement == this.nextElementSibling) {
+      resetThePevious()
+      return
+    }
+    resetThePevious()
+    // this.nextElementSibling.style.height = `${listOfHeights[i]}px`
+    this.nextElementSibling.style.height = `${listOfHeights[i]}px`
+    previousElement = this.nextElementSibling
+  }
 })
