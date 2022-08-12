@@ -43,7 +43,7 @@
   font-size: 1.6rem;
   padding-left: 30px;
   padding-right: 30px;
-  transition: height .3s ease-in-out;
+  transition: height 100ms ease-in-out;
 }
 .help-label > h2{
   display: block;
@@ -52,4 +52,9 @@
   font-weight: 400;
   line-height: 130%;
   padding-top: 28px;
+}
+
+.rotate-plus-symbol{
+  /* rotate: 45deg; */
+  transform: rotate(45deg);
 }
