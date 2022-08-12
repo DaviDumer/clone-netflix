@@ -1,0 +1,60 @@
+.span-video {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span-video img {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  height: auto;
+}
+
+#video-news1{ /* dashboard netflix */
+  position: absolute;
+  z-index: 0;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  width: 386px;
+  height: auto;
+}
+#img-news1 { /* TV */ 
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
+#img-news2 { /* Imagem da on */
+  position: relative;
+  height: 82%;
+  left: -80px;
+  width: auto;
+}
+
+#video-news2{ /* video do Dâst */
+  position: absolute;
+  z-index: 0;
+  margin-bottom: 100px;
+  margin-right: 4px;
+  width: 330px;
+  height: auto;
+}
+#img-news3 { /* video mac */ 
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
+#img-news4{ /* Imagem infantil */
+  height: 70%;
+  width: auto;
+}
+
+.baner-right {
+  align-items: flex-end;
+}
+.baner-left {
+  align-items: flex-start;
+}
