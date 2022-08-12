@@ -16,7 +16,8 @@
   margin-top: 8px;
   margin-left: 12px;
 }
-#stranger-things > h4, p{
+#stranger-things > h4,
+#stranger-things > p{
   position: relative;
   top: -65px;
   left: 80px;
